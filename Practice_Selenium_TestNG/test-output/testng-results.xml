@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2018-03-13T18:02:18Z" name="Programs" finished-at="2018-03-13T18:02:57Z" duration-ms="39118">
+    <groups>
+    </groups>
+    <test started-at="2018-03-13T18:02:18Z" name="Test Flipkart" finished-at="2018-03-13T18:02:55Z" duration-ms="36987">
+      <class name="Programs.FlipkartTest">
+        <test-method signature="LaunchBrowser()[pri:1, instance:Programs.FlipkartTest@3f6b0be5]" started-at="2018-03-13T18:02:18Z" name="LaunchBrowser" finished-at="2018-03-13T18:02:49Z" duration-ms="31385" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchBrowser -->
+        <test-method signature="ClosePopUp()[pri:2, instance:Programs.FlipkartTest@3f6b0be5]" started-at="2018-03-13T18:02:49Z" name="ClosePopUp" finished-at="2018-03-13T18:02:53Z" duration-ms="3710" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClosePopUp -->
+        <test-method is-config="true" signature="f()[pri:0, instance:Programs.FlipkartTest@3f6b0be5]" started-at="2018-03-13T18:02:53Z" name="f" finished-at="2018-03-13T18:02:55Z" duration-ms="1846" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+      </class> <!-- Programs.FlipkartTest -->
+    </test> <!-- Test Flipkart -->
+    <test started-at="2018-03-13T18:02:18Z" name="Test Facebook" finished-at="2018-03-13T18:02:57Z" duration-ms="39118">
+      <class name="Programs.FaceBookLogintest">
+        <test-method is-config="true" signature="Setup()[pri:0, instance:Programs.FaceBookLogintest@63a12c68]" started-at="2018-03-13T18:02:18Z" name="Setup" finished-at="2018-03-13T18:02:47Z" duration-ms="28865" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="LoginCheck()[pri:0, instance:Programs.FaceBookLogintest@63a12c68]" started-at="2018-03-13T18:02:47Z" name="LoginCheck" finished-at="2018-03-13T18:02:52Z" duration-ms="5121" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginCheck -->
+        <test-method is-config="true" signature="CloseFB()[pri:0, instance:Programs.FaceBookLogintest@63a12c68]" started-at="2018-03-13T18:02:52Z" name="CloseFB" finished-at="2018-03-13T18:02:57Z" duration-ms="5128" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseFB -->
+      </class> <!-- Programs.FaceBookLogintest -->
+    </test> <!-- Test Facebook -->
+  </suite> <!-- Programs -->
+</testng-results>

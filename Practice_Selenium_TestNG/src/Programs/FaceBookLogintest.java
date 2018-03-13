@@ -19,7 +19,18 @@ public class FaceBookLogintest {
 			driver.manage().window().maximize();
 			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 			driver.get("https://www.facebook.com");
-			driver.switchTo().window("Facebook - log in or Sign up");
+			//driver.switchTo().window("Facebook - log in or Sign up");
+			String your_title = "Facebook - log in or Sign up";
+			String currentWindow = driver.getWindowHandle();  //will keep current window to switch back
+			for(String winHandle : driver.getWindowHandles()){
+			   if (driver.switchTo().window(winHandle).getTitle().equals(your_title)) {
+			     //This is the one you're looking for
+			     break;
+			   } 
+			   else {
+			      driver.switchTo().window(currentWindow);
+			   } 
+			}
 		  
 	  }
 	  @Test
@@ -34,6 +45,6 @@ public class FaceBookLogintest {
 	  public void CloseFB() {
 		  driver.navigate().back();
 		  driver.findElement(By.xpath(".//*[@id='u_0_l']")).sendKeys("missionacomplished");
-		  driver.close();
+		  driver.quit();
 	  }
 }

@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Programs" parallel="tests">
+	<test name="Test Facebook">
+		<classes>
+			<class name="Programs.FaceBookLogintest">
+				
+			</class>
+		</classes>
+	</test>
+	<test name="Test Flipkart">
+		<classes>
+			<class name="Programs.FlipkartTest">
+				
+			</class>
+		</classes>
+	</test>
+</suite>

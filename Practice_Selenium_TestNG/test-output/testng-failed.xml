@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Programs]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="Test Flipkart(failed)">
+    <classes>
+      <class name="Programs.FlipkartTest">
+        <methods>
+          <include name="ClosePopUp"/>
+          <include name="f"/>
+        </methods>
+      </class> <!-- Programs.FlipkartTest -->
+    </classes>
+  </test> <!-- Test Flipkart(failed) -->
+</suite> <!-- Failed suite [Programs] -->
