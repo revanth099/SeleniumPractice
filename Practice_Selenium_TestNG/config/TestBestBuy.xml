@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Programs">
+  <test name="TestBestBuy">
+ 
+    <classes>
+   
+      <class name="Programs.BestBuy"/>
+      
+    </classes>
+  </test> <!-- TestBestBuy -->
+</suite> <!-- Suite -->
