@@ -7,7 +7,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -57,12 +59,14 @@ public class BestBuy {
   public void BestBuyAddtoCart() {
 	  try {
 		driver.get(sec_url);
-		  Thread.sleep(5000);
+		  WebDriverWait wait = new WebDriverWait(driver, 20);
 		  Select country=new Select(driver.findElement(path1));
 		  country.selectByIndex(1);
 		  driver.findElement(path2).click();
-		  Thread.sleep(7000);
-		  driver.findElement(path3).sendKeys(product);
+		  //Thread.sleep(7000);
+		  WebElement p1=wait.until(ExpectedConditions.visibilityOfElementLocated(path3));
+		  p1.sendKeys(product);
+			//driver.findElement(path3).sendKeys(product);
 		  driver.findElement(path4).click();
 		  Thread.sleep(5000);
 		  driver.findElement(path5).click();
@@ -85,22 +89,27 @@ public class BestBuy {
 		  driver.findElement(fpath2).click();
 		  Thread.sleep(5000);
 		  driver.findElement(fpath3).click();
-		  /*String titlef1= "Apple iPhone X (Space Gray, 64 GB) Online at Best Price with Great Offers Only On Flipkart.com:";
+		  String titlef1= "Apple iPhone X (Space Gray, 64 GB) Online at Best Price with Great Offers Only On Flipkart.com:";
 			 String titlef2= driver.getWindowHandle();
 			 for(String titlef3:driver.getWindowHandles()) {
-				 if(driver.switchTo().window(titlef3).equals(titlef1)) {
+				 if(driver.switchTo().window(titlef3).getTitle().equals(titlef1)) {
 					 break;
 				 }
 				 else {
 				      driver.switchTo().window(titlef2);
 				   } 
-			 }*/
+			 }
 		  	String title=driver.getTitle();
 			 System.out.println(title);
 			 String url=driver.getCurrentUrl();
 			 System.out.println(url);
 			 List<WebElement> divs= driver.findElements(By.tagName(tagname));
-			 System.out.println(divs);
+			 /*for(int i=0;i<=divs.size();i++) {
+				 System.out.println(divs.get(i).getText());
+				 
+			 }*/
+			 
+			 System.out.println(divs.size());
 			 
 	} catch (InterruptedException e) {
 		// TODO Auto-generated catch block
