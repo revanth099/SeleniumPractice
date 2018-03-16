@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite parallel="tests" name="Failed suite [Programs]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" parallel="tests" name="Test Flipkart(failed)">
+<suite name="Failed suite [Programs]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="TestBestBuy(failed)">
     <classes>
-      <class name="Programs.FlipkartTest">
+      <class name="Programs.BestBuy">
         <methods>
-          <include name="ClosePopUp"/>
-          <include name="f"/>
+          <include name="FlipkartAddtoCart"/>
+          <include name="Setup"/>
+          <include name="NavigateBack"/>
         </methods>
-      </class> <!-- Programs.FlipkartTest -->
+      </class> <!-- Programs.BestBuy -->
     </classes>
-  </test> <!-- Test Flipkart(failed) -->
+  </test> <!-- TestBestBuy(failed) -->
 </suite> <!-- Failed suite [Programs] -->

@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Programs]" guice-stage="DEVELOPMENT">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="TestBestBuy(failed)">
     <classes>
       <class name="Programs.BestBuy">
         <methods>
-          <include name="FlipkartAddtoCart"/>
           <include name="Setup"/>
+          <include name="BestBuyAddtoCart"/>
           <include name="NavigateBack"/>
         </methods>
       </class> <!-- Programs.BestBuy -->
     </classes>
   </test> <!-- TestBestBuy(failed) -->
-</suite> <!-- Failed suite [Programs] -->
+</suite> <!-- Failed suite [Suite] -->
