@@ -11,7 +11,7 @@ public class DataDrivenFromExcel {
 
 	public static void main(String[] args) {
 		
-		Xls_Reader reader = new Xls_Reader("C:/Users/Revanth/git/SeleniumPractice/Practice_Selenium_TestNG/src/com/TestData/Gmail/GmailTestData.xlsx");
+		Xls_Reader reader = new Xls_Reader("C:\\Users\\Revanth\\git\\SeleniumPractice\\Practice_Selenium_TestNG\\src\\com\\TestData\\Gmail\\GmailTestData.xlsx");
 
 		/*System.setProperty("webdriver.chrome.driver","C:\\selenium jar file\\chromedriver\\chromedriver.exe");
 		WebDriver driver =new ChromeDriver();
